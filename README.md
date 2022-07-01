@@ -64,5 +64,20 @@ The final (eligable submission) could be found <a href="https://github.com/ammar
 and another versioin of the same submission with a little refactoring is <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/inference.py">here</a> but not tested.
 
  Other submissions could be found on the submission folder.
+## Specification
 
+CPU intel corei9 10th generation
+
+GPU RTX 3090
+
+OS Linux
+
+Memory 128 GB
+
+Training Duration:
+* Effb5 top about 180 minutes for a single fold (5 folds were trained)  in total about 15 hours
+* Effv2 top about 2020 minutes for a single folds (3 folds were trained) in total about 11 hours
+* Effb5 literal about 180 minutes for a single fold (4 folds were trained) in total about 12 hours
+Inference Duration:
+It took almost 2 hours and 45 minutes on the driven data competition env
 ## Solution Architecture
