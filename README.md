@@ -31,7 +31,7 @@ To make sure that the results are completely reproducable it is better to use th
   from inside the train_top folder run:
   ```
   from train import run
-  run(0, "effv5")
+  run(0, "effb5")
   
   ```
   This will train fold 0 to train other folds for effb5 just change the number to 1,2,3,4.
@@ -46,7 +46,7 @@ To make sure that the results are completely reproducable it is better to use th
   from inside the train_literal folder run:
   ```
   from train import run
-  run(0, "effv5")
+  run(0, "effb5")
   
   ```
   This will train fold 0 to train other folds for effb5 just change the number to 1,2,4. 
