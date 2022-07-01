@@ -1,3 +1,7 @@
+# PLEASE NOTICE THIS INFERENCE IS REFACTORED A LITTLE AND IT IS NOT THE ONE USED ON THE COMP
+# IN CASE YOU GOT DIFFERENT RESULTS USE THIS SCRIPT
+# https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/submissions/score_4887_final/main.py
+
 #######################################
 #           import libs               #
 #######################################
