@@ -14,6 +14,9 @@ To make sure that the results are completely reproducable it is better to use th
 - torchvision == 0.8.2+cu110
 - pandas == 1.1.5
 
+## Download weights
+You can download the trained models from <a href="https://drive.google.com/drive/folders/1uHCh6ZOAmB6qULURklHse_CuoU-NpaQU?usp=sharing"> here</a>
+
 ## Training
 ### Using Training Scripts
 * Clone the repo
