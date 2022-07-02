@@ -20,13 +20,15 @@ You can download the trained models from <a href="https://drive.google.com/drive
 ## Training
 ### Using Training Scripts
 * Clone the repo
-* Add the data to the same directory inside the repo in a folder named data includes a sub folder called images and the metadata.csv
+* Add the data to the same directory inside the repo in a folder named data, which includes a sub folder called images and the metadata.csv
 ```
 ├── train_literal (source code)
 ├── train_top (source code)
 └── data (dataset)
     └── images
         ├── img1.jpg
+        .
+        .
     ├── metadata.csv
 
 ```
@@ -37,14 +39,14 @@ You can download the trained models from <a href="https://drive.google.com/drive
   run(0, "effb5")
   
   ```
-  This will train fold 0 to train other folds for effb5 just change the number to 1,2,3,4.
+  This will train fold 0 to train other folds for effb5 just change the number to 0,1,2,3,4.
   To train top model with effv2m run:
   ```
   from train import run
   run(0, "effv2")
   
   ```
-  to train other folds just change the number to 2, 4 (only three folds where trained (0, 2, 4))
+  to train other folds just change the number to 0, 2, 4 (only three folds where trained (0, 2, 4))
   #### train literal models
   from inside the train_literal folder run:
   ```
@@ -52,7 +54,7 @@ You can download the trained models from <a href="https://drive.google.com/drive
   run(0, "effb5")
   
   ```
-  This will train fold 0 to train other folds for effb5 just change the number to 1,2,4. 
+  This will train fold 0 to train other folds for effb5 just change the number to 0,1,2,4. 
   (only four folds are trained (0,1,2,4))
   #### PS: when after the training finishes change the name of weights files to avoid over writing it when starting a training for new fold.
 ### OR Using Notbooks:
@@ -60,13 +62,13 @@ You can download the trained models from <a href="https://drive.google.com/drive
 * <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/submissions/score_4661/training_notebooks/model_efficientnetv2_rw_m_IMG_SIZE_512_arcface_f2_6-79.ipynb"> Training effv2 models for top images </a>
 * <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/submissions/score_4903/training_nb/model_tf_efficientnet_b4_ns_IMG_SIZE_512_arcface_f4_literal_newapproach.ipynb"> Training effb5 models for literal </a>
 
-There are some other notebooks which were used during experiments but none of their models is used on the best or last submissions
+There are some other notebooks which were used during experiments but none of them is used on the best or last submissions
 
 ## Inference
 The final (eligable submission) could be found <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/submissions/score_4887_final/main.py"> here</a> 
-and another versioin of the same submission with a little refactoring is <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/inference.py">here</a> but not tested.
+and another version of the same submission with a little refactoring is <a href="https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/inference.py">here</a> but not tested.
 
- Other submissions could be found on the submission folder.
+ Other submissions could be found on the submissions folder.
 ## Specification
 
 CPU intel corei9 10th generation
@@ -79,7 +81,7 @@ Memory 128 GB
 
 Training Duration:
 * Effb5 top about 180 minutes for a single fold (5 folds were trained)  in total about 15 hours
-* Effv2 top about 2020 minutes for a single folds (3 folds were trained) in total about 11 hours
+* Effv2 top about 220 minutes for a single folds (3 folds were trained) in total about 11 hours
 * Effb5 literal about 180 minutes for a single fold (4 folds were trained) in total about 12 hours
 Inference Duration:
 It took almost 2 hours and 45 minutes on the driven data competition env
