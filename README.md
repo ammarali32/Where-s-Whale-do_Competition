@@ -84,3 +84,4 @@ Training Duration:
 Inference Duration:
 It took almost 2 hours and 45 minutes on the driven data competition env
 ## Solution Architecture
+![Alt Text](https://github.com/ammarali32/Where-s-Whale-do_Competition/blob/main/images/whale_diagram.JPG)
